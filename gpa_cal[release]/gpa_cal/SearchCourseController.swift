@@ -101,17 +101,17 @@ class SearchCourseController: UIViewController, UITableViewDataSource, UITableVi
             let cell = tableView.cellForRowAtIndexPath(indexPath)
             cell?.accessoryType = UITableViewCellAccessoryType.Checkmark
             
-            let alert = UIAlertController(title: "Notice", message: "Successfully added", preferredStyle: .Alert)
-            
-            let action = UIAlertAction(title: "Ok", style: .Default, handler: nil)
-            
-            alert.addAction(action)
-            
-            if self.sc.active {
-                self.sc.presentViewController(alert, animated: true, completion: nil)
-            } else {
-                self.presentViewController(alert, animated: true, completion: nil)
-            }
+//            let alert = UIAlertController(title: "Notice", message: "Successfully added", preferredStyle: .Alert)
+//            
+//            let action = UIAlertAction(title: "Ok", style: .Default, handler: nil)
+//            
+//            alert.addAction(action)
+//            
+//            if self.sc.active {
+//                self.sc.presentViewController(alert, animated: true, completion: nil)
+//            } else {
+//                self.presentViewController(alert, animated: true, completion: nil)
+//            }
             
             
             
@@ -136,16 +136,16 @@ class SearchCourseController: UIViewController, UITableViewDataSource, UITableVi
             self.parent.courseTable.reloadData()
             cell?.accessoryType = UITableViewCellAccessoryType.None
             
-            let alert = UIAlertController(title: "Notice", message: "Successfully removed", preferredStyle: .Alert)
-            
-            let action = UIAlertAction(title: "Ok", style: .Default, handler: nil)
-            alert.addAction(action)
-            
-            if self.sc.active {
-                self.sc.presentViewController(alert, animated: true, completion: nil)
-            } else {
-                self.presentViewController(alert, animated: true, completion: nil)
-            }
+//            let alert = UIAlertController(title: "Notice", message: "Successfully removed", preferredStyle: .Alert)
+//            
+//            let action = UIAlertAction(title: "Ok", style: .Default, handler: nil)
+//            alert.addAction(action)
+//            
+//            if self.sc.active {
+//                self.sc.presentViewController(alert, animated: true, completion: nil)
+//            } else {
+//                self.presentViewController(alert, animated: true, completion: nil)
+//            }
             
         }
         
