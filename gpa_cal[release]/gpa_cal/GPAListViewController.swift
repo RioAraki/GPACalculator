@@ -20,7 +20,7 @@ class GPAListViewController: UIViewController, UITableViewDataSource, UITableVie
         GPAList.estimatedRowHeight = 100
         GPAList.rowHeight = UITableViewAutomaticDimension
         
-        overview.text = "You still have \(100 - course.pastRatio())% left.";
+        overview.text = "You still have \(100 - course.pastRatio())% left.\nXXX Chart";
         
         let chart = getBarChart()
         chart.backgroundColor = UIColor(red: 224/255, green: 255/255, blue: 255/255, alpha: 0.98)
@@ -49,8 +49,9 @@ class GPAListViewController: UIViewController, UITableViewDataSource, UITableVie
             xValue = xValue + 1.0
         }
         dataItem.barPointArray = temp
+        
         dataItem.xAxesDegreeTexts = ["A+", "4.0", "3.7", "3.3", "3.0", "2.7","2.3", "2.0", "1.7","1.3", "1.0", "0.7"]
-        dataItem.yAxesDegreeTexts = ["", "", "", "", "", "", "", "", "", ""]
+        //dataItem.yAxesDegreeTexts = ["100", "90", "80", "70", "60", "50", "40", "30", "20", "10"]
         let barChart: PDBarChart = PDBarChart(frame: CGRectMake(0, 0, 350, 250), dataItem: dataItem)
         return barChart
     }

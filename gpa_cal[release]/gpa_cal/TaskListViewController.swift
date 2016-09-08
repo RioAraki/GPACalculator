@@ -10,30 +10,19 @@ import UIKit
 
 class TaskListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    @IBOutlet weak var fakeTitle: UILabel!
-    @IBOutlet weak var fakeNaviBar: UIView!
     @IBOutlet weak var TaskTable: UITableView!
     
     @IBOutlet weak var earnedMark: UILabel!
     @IBOutlet weak var past: UILabel!
     @IBOutlet weak var effort: UILabel!
     
-   
-    
-    
     var course: Course!
-    var barFlag = true
+
     var parent: ViewController!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-        if barFlag {
-            fakeNaviBar.hidden = true
-        } else {
-            fakeNaviBar.hidden = false
-            fakeTitle.text = course.name
-        }
         TaskTable.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 300))
         
         title = course.name

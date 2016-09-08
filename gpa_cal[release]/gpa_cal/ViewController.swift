@@ -73,7 +73,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             destVC.course = addedCourses[courseTable.indexPathForSelectedRow!.row]
             //destVC.index = courseTable.indexPathForSelectedRow!.row
             destVC.parent = self
-            destVC.barFlag = true
+            
             
         } else if (segue.identifier == "showSearchView") {
             let destVC = segue.destinationViewController as! SearchCourseController
@@ -261,7 +261,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
     }
     
-    
+    @IBAction func create(segue: UIStoryboardSegue) {
+        
+    }
 
 }
 

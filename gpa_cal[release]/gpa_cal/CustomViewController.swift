@@ -52,19 +52,19 @@ class CustomViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
   
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "checkNewDIY" {
-            let destVC = segue.destinationViewController as! TaskListViewController
+            let destVC = segue.destinationViewController as! ViewController
             var tmp = "N/A"
             if let name = CourseName.text {
-                tmp = name
+                tmp = name + termPR[termPicker.selectedRowInComponent(0)]
             }
             let c = Course(order: "\(self.home.diyCourses.count)", name: tmp, term: termPR[termPicker.selectedRowInComponent(0)], taskList: [Task(name: "Final", ratio: 0)], added: 1, diy: 1)
             c.save(c.order)
-            self.home.diyCourses.append(c)
-            self.home.createAddedCourses()
-            self.home.courseTable.reloadData()
-            destVC.course = c
-            destVC.parent = self.home
-            destVC.barFlag = false
+            destVC.diyCourses.append(c)
+            destVC.createAddedCourses()
+            destVC.courseTable.reloadData()
+            //destVC.course = c
+            //destVC.parent = self.home
+            
         }
     }
 
