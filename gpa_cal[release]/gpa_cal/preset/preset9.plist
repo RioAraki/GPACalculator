@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>MAT137Y Test</string>
+	<string>Y</string>
+	<string>0</string>
+	<string>Hightest Midterm</string>
+	<string>30.0</string>
+	<string>0.0</string>
+	<string>0.0</string>
+	<string>Second Highest Midterm</string>
+	<string>20.0</string>
+	<string>0.0</string>
+	<string>0.0</string>
+	<string>Lowest Midterm</string>
+	<string>10.0</string>
+	<string>0.0</string>
+	<string>0.0</string>
+	<string>Final</string>
+	<string>50.0</string>
+	<string>0.0</string>
+	<string>0.0</string>
+</array>
+</plist>

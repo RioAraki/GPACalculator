@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>AST101S Test</string>
+	<string>S</string>
+	<string>0</string>
+	<string>Quiz 1</string>
+	<string>1.0</string>
+	<string>0.0</string>
+	<string>0.0</string>
+	<string>Quiz 2</string>
+	<string>1.0</string>
+	<string>0.0</string>
+	<string>0.0</string>
+	<string>Quiz 3</string>
+	<string>1.0</string>
+	<string>0.0</string>
+	<string>0.0</string>
+	<string>Quiz 4</string>
+	<string>1.0</string>
+	<string>0.0</string>
+	<string>0.0</string>
+	<string>Quiz 5</string>
+	<string>1.0</string>
+	<string>0.0</string>
+	<string>0.0</string>
+	<string>Quiz 6</string>
+	<string>1.0</string>
+	<string>0.0</string>
+	<string>0.0</string>
+	<string>Quiz 7</string>
+	<string>1.0</string>
+	<string>0.0</string>
+	<string>0.0</string>
+	<string>Quiz 8</string>
+	<string>1.0</string>
+	<string>0.0</string>
+	<string>0.0</string>
+	<string>Quiz 9</string>
+	<string>1.0</string>
+	<string>0.0</string>
+	<string>0.0</string>
+	<string>Quiz 10</string>
+	<string>1.0</string>
+	<string>0.0</string>
+	<string>0.0</string>
+	<string>Midterm</string>
+	<string>40.0</string>
+	<string>0.0</string>
+	<string>0.0</string>
+	<string>Final</string>
+	<string>50.0</string>
+	<string>0.0</string>
+	<string>0.0</string>
+</array>
+</plist>
