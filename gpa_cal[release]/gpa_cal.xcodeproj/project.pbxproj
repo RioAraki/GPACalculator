@@ -26,6 +26,7 @@
 		5291C6881D306A2800245116 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5291C6861D306A2800245116 /* LaunchScreen.storyboard */; };
 		5291C6931D306A2800245116 /* gpa_calTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5291C6921D306A2800245116 /* gpa_calTests.swift */; };
 		5291C69E1D306A2800245116 /* gpa_calUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5291C69D1D306A2800245116 /* gpa_calUITests.swift */; };
+		5293CC551D84F319009BA0B8 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5293CC541D84F319009BA0B8 /* HomeTableViewCell.swift */; };
 		52BA89921D6783AB00EEC39E /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BA89911D6783AA00EEC39E /* CustomViewController.swift */; };
 		52CCBB511D69FB1F002691F5 /* preset0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52CCBB501D69FB1F002691F5 /* preset0.plist */; };
 		52CCBB531D69FDD9002691F5 /* preset in Resources */ = {isa = PBXBuildFile; fileRef = 52CCBB521D69FDD9002691F5 /* preset */; };
@@ -77,6 +78,7 @@
 		5291C6991D306A2800245116 /* gpa_calUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gpa_calUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5291C69D1D306A2800245116 /* gpa_calUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gpa_calUITests.swift; sourceTree = "<group>"; };
 		5291C69F1D306A2800245116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5293CC541D84F319009BA0B8 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		52BA89911D6783AA00EEC39E /* CustomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 		52CCBB501D69FB1F002691F5 /* preset0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = preset0.plist; sourceTree = "<group>"; };
 		52CCBB521D69FDD9002691F5 /* preset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = preset; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				52CCBB521D69FDD9002691F5 /* preset */,
 				52CCBB501D69FB1F002691F5 /* preset0.plist */,
 				526E55FB1D4426880033D163 /* SearchTableViewCell.swift */,
+				5293CC541D84F319009BA0B8 /* HomeTableViewCell.swift */,
 				52DA53D51D43183D00BA82D8 /* TaskTableViewCell.swift */,
 				52BA89911D6783AA00EEC39E /* CustomViewController.swift */,
 				5291C67C1D306A2800245116 /* ViewController.swift */,
@@ -364,6 +367,7 @@
 				522107421D62DC260066CE94 /* GPAListTableViewCell.swift in Sources */,
 				527A82401D4ABA8A000A2B08 /* Task1.swift in Sources */,
 				52DA53D41D42F4B500BA82D8 /* TaskTableViewController.swift in Sources */,
+				5293CC551D84F319009BA0B8 /* HomeTableViewCell.swift in Sources */,
 				522107441D630D120066CE94 /* TaskListViewController.swift in Sources */,
 				522107551D6439FF0066CE94 /* PDPieChart.swift in Sources */,
 				5291C6831D306A2800245116 /* gpa_cal.xcdatamodeld in Sources */,

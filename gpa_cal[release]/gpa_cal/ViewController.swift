@@ -25,9 +25,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     //表格相应位置的单元格，显示哪些内容
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Course0", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("Course0", forIndexPath: indexPath) as! HomeTableViewCell
         //需要修改
-        cell.textLabel!.text = addedCourses[indexPath.row].name + "    " + String(format: "%.2f", addedCourses[indexPath.row].currentMark()) + "%"
+        
+        cell.name.text = addedCourses[indexPath.row].name;
+        
+        cell.progress.text = String(format: "%.2f", addedCourses[indexPath.row].currentMark()) + "%"
 
         //添加图片，测试用，可删除
         //cell.imageView?.image = UIImage(named: "grades")

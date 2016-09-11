@@ -85,7 +85,7 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
         cell.totalScore.text = cellDisplayHelper((course.taskList[indexPath.row].totalScore))
         cell.totalScore.tag = indexPath.row
         cell.percent.text = String(format:"%.2f",(course.taskList[indexPath.row].getPercent()*100)) + "%"
-        cell.point.text = String(format:"%.2f %",(course.taskList[indexPath.row].getPoint())) + "%"
+        cell.point.text = String(format:"%.2f %",(course.taskList[indexPath.row].getPoint()))
         //cell.backgroundColor = UIColor.clearColor()
         
         // Configure the cell...
