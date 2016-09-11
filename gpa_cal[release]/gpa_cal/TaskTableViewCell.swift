@@ -17,6 +17,7 @@ class TaskTableViewCell: UITableViewCell {
     @IBOutlet weak var percent: UILabel!
     @IBOutlet weak var ratio: UITextField!
     
+    @IBOutlet weak var tagImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
