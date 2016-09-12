@@ -22,6 +22,7 @@ class CustomViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         
         var tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(CustomViewController.DismissKeyboard))
         self.view.addGestureRecognizer(tap)
+        
         // Do any additional setup after loading the view.
     }
     

@@ -18,6 +18,7 @@ class Course {
     var taskList = [Task]()
     var added: Int
     var diy: Int
+    var prof: String = ""
     
     init(order:String, name: String, term: String, taskList: [Task], added: Int, diy: Int) {
         self.name = name
@@ -26,6 +27,34 @@ class Course {
         self.added = added
         self.order = order
         self.diy = diy
+    }
+    
+    func addProf(name:String) {
+        self.prof = name
+    }
+    
+    func addQuiz(num: Int) {
+        var i = 0
+        while i < num {
+            i = i + 1
+            self.taskList.append(Task(name: "Quiz " + "\(i)", ratio: 0.0))
+        }
+    }
+    
+    func addTest(num: Int) {
+        var i = 0
+        while i < num {
+            i = i + 1
+            self.taskList.append(Task(name: "Test " + "\(i)", ratio: 0.0))
+        }
+    }
+    
+    func addAssign(num: Int) {
+        var i = 0
+        while i < num {
+            i = i + 1
+            self.taskList.append(Task(name: "Assignment " + "\(i)", ratio: 0.0))
+        }
     }
     
     func currentMark() -> Double {
