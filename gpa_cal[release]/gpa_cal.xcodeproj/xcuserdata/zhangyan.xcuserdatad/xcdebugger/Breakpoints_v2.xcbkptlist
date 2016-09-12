@@ -10,13 +10,76 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "gpa_cal/TaskListViewController.swift"
-            timestampString = "493828106.829177"
+            timestampString = "495342864.905661"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
             landmarkName = "reloadSummary()"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "gpa_cal/TaskTableViewCell.swift"
+            timestampString = "495339735.730361"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "TaskTableViewCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "gpa_cal.TaskTableViewCell.taskName.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
+                  moduleName = "gpa_cal"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhangyan/Desktop/Graply/gpa_cal%5Brelease%5D/gpa_cal/TaskTableViewCell.swift"
+                  timestampString = "495340400.171758"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "gpa_cal.TaskTableViewCell.init (style : __C.UITableViewCellStyle, reuseIdentifier : Swift.Optional&lt;Swift.String&gt;) -&gt; gpa_cal.TaskTableViewCell"
+                  moduleName = "gpa_cal"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhangyan/Desktop/Graply/gpa_cal%5Brelease%5D/gpa_cal/TaskTableViewCell.swift"
+                  timestampString = "495340400.172098"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "70">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "gpa_cal.TaskTableViewCell.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;gpa_cal.TaskTableViewCell&gt;"
+                  moduleName = "gpa_cal"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhangyan/Desktop/Graply/gpa_cal%5Brelease%5D/gpa_cal/TaskTableViewCell.swift"
+                  timestampString = "495340400.172402"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "31">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

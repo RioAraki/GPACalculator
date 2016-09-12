@@ -6,12 +6,14 @@
 //  Copyright © 2016年 LizheChen. All rights reserved.
 //
 
+// TODO: change separater style
+// TODO: give color to each tagBar
+
 import UIKit
 
 class TaskListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var TaskTable: UITableView!
-    
     @IBOutlet weak var earnedMark: UILabel!
     @IBOutlet weak var past: UILabel!
     @IBOutlet weak var effort: UILabel!
@@ -74,23 +76,31 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Task0", forIndexPath: indexPath) as! TaskTableViewCell
         cell.selectionStyle = .None
-        
+        cell.taskName.layer.backgroundColor = UIColor(red: 234/255, green: 234/255, blue: 234/255, alpha: 1).CGColor;
+        cell.taskName.layer.cornerRadius = 5
         cell.taskName.text = course.taskList[indexPath.row].name
         cell.taskName.placeholder = "Name"
         cell.taskName.tag = indexPath.row
         cell.ratio.text = cellDisplayHelper((course.taskList[indexPath.row].ratio));
+        cell.ratio.layer.backgroundColor = UIColor(red: 234/255, green: 234/255, blue: 234/255, alpha: 1).CGColor;
+        cell.ratio.layer.cornerRadius = 5
         cell.ratio.tag = indexPath.row
         cell.myScore.text = cellDisplayHelper((course.taskList[indexPath.row].myScore))
+        cell.myScore.layer.backgroundColor = UIColor(red: 234/255, green: 234/255, blue: 234/255, alpha: 1).CGColor;
+        cell.myScore.layer.cornerRadius = 5
         cell.myScore.tag = indexPath.row
         cell.totalScore.text = cellDisplayHelper((course.taskList[indexPath.row].totalScore))
+        cell.totalScore.layer.backgroundColor = UIColor(red: 234/255, green: 234/255, blue: 234/255, alpha: 1).CGColor;
+        cell.totalScore.layer.cornerRadius = 5
         cell.totalScore.tag = indexPath.row
         cell.percent.text = String(format:"%.2f",(course.taskList[indexPath.row].getPercent()*100)) + "%"
         cell.point.text = String(format:"%.2f %",(course.taskList[indexPath.row].getPoint()))
+        
+        
         //cell.backgroundColor = UIColor.clearColor()
         
         // Configure the cell...
-        //cell.taskName.layer.cornerRadius = 10
-        //cell.taskName.clipsToBounds = true
+                //cell.taskName.clipsToBounds = true
         
         
         return cell
