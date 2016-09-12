@@ -34,7 +34,7 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
             effort.text = "0.0%"
         }
         
-        var tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(TaskListViewController.DismissKeyboard))
+        let tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(TaskListViewController.DismissKeyboard))
         self.view.addGestureRecognizer(tap)
         // Do any additional setup after loading the view.
     }
