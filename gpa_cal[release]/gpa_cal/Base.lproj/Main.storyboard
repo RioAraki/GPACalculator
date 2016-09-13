@@ -582,7 +582,7 @@
                     <navigationItem key="navigationItem" title="2016 Fall" id="t44-q5-DYm">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="5u6-2C-4dO">
                             <connections>
-                                <segue destination="rov-SQ-QoQ" kind="showDetail" id="XFf-W0-9z7"/>
+                                <segue destination="rov-SQ-QoQ" kind="show" identifier="showSearchView" id="22D-wD-0vq"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -614,7 +614,7 @@
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Result0" id="1FS-XJ-REe" customClass="SearchTableViewCell" customModule="gpa_cal" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1FS-XJ-REe" id="k5h-5E-Yo1">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
@@ -829,7 +829,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kzk-Po-7ju">
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kzk-Po-7ju">
                                 <rect key="frame" x="125" y="302" width="350" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="mp9-uQ-Ebm"/>
@@ -839,7 +839,7 @@
                                     <outlet property="delegate" destination="QCN-bn-UpD" id="OBt-6h-JN2"/>
                                 </connections>
                             </pickerView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VZ4-g4-7M8">
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VZ4-g4-7M8">
                                 <rect key="frame" x="125" y="84" width="350" height="198"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="QN5-yz-E1B">
@@ -861,7 +861,7 @@
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Tests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyd-P6-qai">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Term Tests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyd-P6-qai">
                                                 <rect key="frame" x="0.0" y="84" width="150" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -960,12 +960,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Custom" id="X3t-xu-Zee">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="WpV-rL-rx0">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="74t-qD-xFU">
-                                <rect key="frame" x="530" y="7" width="50" height="30"/>
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="74t-qD-xFU">
+                                <rect key="frame" x="545" y="4" width="35" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.25490196079999999" green="0.41176470590000003" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Create"/>
+                                <state key="normal" image="Checkmark"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="10"/>
@@ -994,6 +993,7 @@
     </scenes>
     <resources>
         <image name="Chart" width="512" height="512"/>
+        <image name="Checkmark" width="50" height="50"/>
         <image name="help2" width="220" height="220"/>
     </resources>
 </document>
