@@ -23,7 +23,7 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
     var parent: ViewController!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.view.backgroundColor = UIColor(red: 42/255, green: 200/255, blue: 202/255, alpha: 1);
         
         TaskTable.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 300))
         
@@ -77,21 +77,21 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
         let cell = tableView.dequeueReusableCellWithIdentifier("Task0", forIndexPath: indexPath) as! TaskTableViewCell
         cell.selectionStyle = .None
         cell.taskName.layer.backgroundColor = UIColor(red: 234/255, green: 234/255, blue: 234/255, alpha: 1).CGColor;
-        cell.taskName.layer.cornerRadius = 5
+        cell.taskName.layer.cornerRadius = 10
         cell.taskName.text = course.taskList[indexPath.row].name
         cell.taskName.placeholder = "Name"
         cell.taskName.tag = indexPath.row
         cell.ratio.text = cellDisplayHelper((course.taskList[indexPath.row].ratio));
         cell.ratio.layer.backgroundColor = UIColor(red: 234/255, green: 234/255, blue: 234/255, alpha: 1).CGColor;
-        cell.ratio.layer.cornerRadius = 5
+        cell.ratio.layer.cornerRadius = 10
         cell.ratio.tag = indexPath.row
         cell.myScore.text = cellDisplayHelper((course.taskList[indexPath.row].myScore))
         cell.myScore.layer.backgroundColor = UIColor(red: 234/255, green: 234/255, blue: 234/255, alpha: 1).CGColor;
-        cell.myScore.layer.cornerRadius = 5
+        cell.myScore.layer.cornerRadius = 10
         cell.myScore.tag = indexPath.row
         cell.totalScore.text = cellDisplayHelper((course.taskList[indexPath.row].totalScore))
         cell.totalScore.layer.backgroundColor = UIColor(red: 234/255, green: 234/255, blue: 234/255, alpha: 1).CGColor;
-        cell.totalScore.layer.cornerRadius = 5
+        cell.totalScore.layer.cornerRadius = 10
         cell.totalScore.tag = indexPath.row
         cell.percent.text = String(format:"%.2f",(course.taskList[indexPath.row].getPercent()*100)) + "%"
         cell.point.text = String(format:"%.2f %",(course.taskList[indexPath.row].getPoint()))
