@@ -12,6 +12,12 @@ class CustomViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
 
     @IBOutlet weak var termPicker: UIPickerView!
     @IBOutlet weak var CourseName: UITextField!
+    @IBOutlet weak var prof: UITextField!
+    @IBOutlet weak var testNum: UITextField!
+    @IBOutlet weak var assignNum: UITextField!
+    @IBOutlet weak var quizNum: UITextField!
+    
+    
     let pickerTerms = ["Year", "Fall", "Winter"]
     let termPR = ["Y", "F", "S"]
     
@@ -58,7 +64,19 @@ class CustomViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
             if let name = CourseName.text {
                 tmp = name + termPR[termPicker.selectedRowInComponent(0)]
             }
-            let c = Course(order: "\(self.home.diyCourses.count)", name: tmp, term: termPR[termPicker.selectedRowInComponent(0)], taskList: [Task(name: "Final", ratio: 0)], added: 1, diy: 1)
+            let c = Course(order: "\(self.home.diyCourses.count)", name: tmp, term: termPR[termPicker.selectedRowInComponent(0)], taskList: [Task(name: "Final", ratio: 0)], added: 1, diy: 1);
+            if let p = self.prof.text {
+                c.addProf(p)
+            }
+            if let t = self.testNum.text {
+                c.addTest(Int(t)!)
+            }
+            if let a = self.assignNum.text {
+                c.addAssign(Int(a)!)
+            }
+            if let q = self.quizNum.text {
+                c.addQuiz(Int(q)!)
+            }
             c.save(c.order)
             destVC.diyCourses.append(c)
             destVC.createAddedCourses()

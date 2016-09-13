@@ -29,7 +29,7 @@
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Task0" rowHeight="110" id="vPd-7Z-9lD" customClass="TaskTableViewCell" customModule="gpa_cal" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="600" height="110"/>
+                                        <rect key="frame" x="0.0" y="92" width="600" height="110"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vPd-7Z-9lD" id="SVA-yN-09P">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="109"/>
@@ -829,7 +829,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kzk-Po-7ju">
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kzk-Po-7ju">
                                 <rect key="frame" x="125" y="302" width="350" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="mp9-uQ-Ebm"/>
@@ -839,7 +839,7 @@
                                     <outlet property="delegate" destination="QCN-bn-UpD" id="OBt-6h-JN2"/>
                                 </connections>
                             </pickerView>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VZ4-g4-7M8">
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VZ4-g4-7M8">
                                 <rect key="frame" x="125" y="84" width="350" height="198"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="QN5-yz-E1B">
@@ -979,7 +979,11 @@
                     </navigationItem>
                     <connections>
                         <outlet property="CourseName" destination="jzk-DF-kG3" id="kdo-MU-o3i"/>
+                        <outlet property="assignNum" destination="YOS-Qb-Xx9" id="TWc-Ay-21j"/>
+                        <outlet property="prof" destination="j7a-Pt-btq" id="dVJ-Xi-ivB"/>
+                        <outlet property="quizNum" destination="oc5-Co-Tze" id="2hg-hQ-Sfm"/>
                         <outlet property="termPicker" destination="kzk-Po-7ju" id="J6a-zC-oj3"/>
+                        <outlet property="testNum" destination="uRI-f0-KI3" id="IJE-pH-Cc3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UpA-vF-Yoq" userLabel="First Responder" sceneMemberID="firstResponder"/>
