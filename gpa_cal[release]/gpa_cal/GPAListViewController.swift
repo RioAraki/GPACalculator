@@ -20,7 +20,7 @@ class GPAListViewController: UIViewController, UITableViewDataSource, UITableVie
         GPAList.estimatedRowHeight = 100
         GPAList.rowHeight = UITableViewAutomaticDimension
         
-        overview.text = "You still have \(100 - course.pastRatio())% left.\nXXX Chart";
+        overview.text = "You still have \(100 - course.pastRatio())% left.\n";
         
         let chart = getBarChart()
         chart.backgroundColor = UIColor(red: 224/255, green: 255/255, blue: 255/255, alpha: 0.98)
