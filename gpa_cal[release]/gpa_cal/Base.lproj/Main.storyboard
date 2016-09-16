@@ -684,7 +684,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kzk-Po-7ju">
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kzk-Po-7ju">
                                 <rect key="frame" x="24" y="296" width="552" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="mp9-uQ-Ebm"/>
@@ -694,7 +694,7 @@
                                     <outlet property="delegate" destination="QCN-bn-UpD" id="OBt-6h-JN2"/>
                                 </connections>
                             </pickerView>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VZ4-g4-7M8">
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VZ4-g4-7M8">
                                 <rect key="frame" x="24" y="84" width="552" height="198"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="QN5-yz-E1B">
