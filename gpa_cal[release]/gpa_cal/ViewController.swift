@@ -52,12 +52,23 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             presetCourses[Int(tmp.order)!].added = 0
             presetCourses[Int(tmp.order)!].save(tmp.order)
         } else if tmp.diy == 1 {
+            print(self.diyCourses)
+            print(tmp.order)
             self.diyCourses.removeAtIndex(Int(tmp.order)!)
+            //rebuild the order of the diy courses
+            var index = 0
+            for d in self.diyCourses {
+                d.order = String(index)
+                index = index + 1
+            }
+            
             let fileManager = NSFileManager.defaultManager()
             let myDirectory = NSHomeDirectory() + "/Documents/diy"
             try! fileManager.removeItemAtPath(myDirectory)
             try! fileManager.createDirectoryAtPath(myDirectory, withIntermediateDirectories: true, attributes: nil)
             saveList(diyCourses)
+            self.loadDIY()
+            
         }
         self.addedCourses.removeAtIndex(indexPath.row)
         
