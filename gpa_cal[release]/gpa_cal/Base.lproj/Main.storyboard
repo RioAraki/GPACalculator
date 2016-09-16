@@ -354,11 +354,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qwH-Rp-iwQ">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="459"/>
+                                <rect key="frame" x="0.0" y="-44" width="600" height="503"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Course0" rowHeight="50" id="g1c-YZ-XY8" customClass="HomeTableViewCell" customModule="gpa_cal" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="600" height="50"/>
+                                        <rect key="frame" x="0.0" y="28" width="600" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="g1c-YZ-XY8" id="x7x-dR-sOo">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="49"/>
@@ -557,7 +557,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yyl-Wv-4wj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1138" y="1065"/>
+            <point key="canvasLocation" x="1121" y="1321"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="I7B-Uq-q2E">
@@ -684,8 +684,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kzk-Po-7ju">
-                                <rect key="frame" x="24" y="296" width="552" height="100"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kzk-Po-7ju">
+                                <rect key="frame" x="125" y="250" width="350" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="mp9-uQ-Ebm"/>
                                 </constraints>
@@ -694,11 +694,11 @@
                                     <outlet property="delegate" destination="QCN-bn-UpD" id="OBt-6h-JN2"/>
                                 </connections>
                             </pickerView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VZ4-g4-7M8">
-                                <rect key="frame" x="24" y="84" width="552" height="198"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VZ4-g4-7M8">
+                                <rect key="frame" x="125" y="40" width="350" height="198"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="QN5-yz-E1B">
-                                        <rect key="frame" x="0.0" y="0.0" width="352" height="198"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="198"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0W8-Iy-VDh">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
@@ -747,7 +747,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="f0J-lB-aAR">
-                                        <rect key="frame" x="352" y="0.0" width="200" height="198"/>
+                                        <rect key="frame" x="150" y="0.0" width="200" height="198"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="e.g. CSC108" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jzk-DF-kG3">
                                                 <rect key="frame" x="0.0" y="0.0" width="200" height="30"/>
@@ -801,13 +801,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="VZ4-g4-7M8" secondAttribute="trailing" constant="4" id="Ez9-Em-Y74"/>
-                            <constraint firstItem="kzk-Po-7ju" firstAttribute="leading" secondItem="VZ4-g4-7M8" secondAttribute="leading" id="GAK-vK-GFA"/>
-                            <constraint firstItem="VZ4-g4-7M8" firstAttribute="leading" secondItem="Wnd-P2-uRc" secondAttribute="leadingMargin" multiplier="1.2" id="JDQ-U4-vj7"/>
-                            <constraint firstItem="VZ4-g4-7M8" firstAttribute="centerX" secondItem="Wnd-P2-uRc" secondAttribute="centerX" id="Jdj-YY-XAv"/>
-                            <constraint firstItem="VZ4-g4-7M8" firstAttribute="top" secondItem="fSn-jj-gtj" secondAttribute="bottom" constant="20" id="Qxp-zu-3M1"/>
-                            <constraint firstItem="kzk-Po-7ju" firstAttribute="trailing" secondItem="VZ4-g4-7M8" secondAttribute="trailing" id="Rlu-N5-yPf"/>
-                            <constraint firstItem="kzk-Po-7ju" firstAttribute="top" secondItem="VZ4-g4-7M8" secondAttribute="bottom" multiplier="1.05" id="dJp-WK-Pcg"/>
+                            <constraint firstItem="kzk-Po-7ju" firstAttribute="top" secondItem="VZ4-g4-7M8" secondAttribute="bottom" constant="12" id="7X4-7f-1G5"/>
+                            <constraint firstItem="kzk-Po-7ju" firstAttribute="leading" secondItem="VZ4-g4-7M8" secondAttribute="leading" id="WDD-3u-9VM"/>
+                            <constraint firstItem="kzk-Po-7ju" firstAttribute="trailing" secondItem="VZ4-g4-7M8" secondAttribute="trailing" id="eok-aH-uwY"/>
+                            <constraint firstItem="VZ4-g4-7M8" firstAttribute="top" secondItem="fSn-jj-gtj" secondAttribute="bottom" constant="20" id="i3b-b9-etQ"/>
+                            <constraint firstItem="VZ4-g4-7M8" firstAttribute="centerX" secondItem="Wnd-P2-uRc" secondAttribute="centerX" id="mBS-9A-5X8"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Custom" id="X3t-xu-Zee">
@@ -822,10 +820,10 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="rov-SQ-QoQ" kind="show" identifier="checkNewDIY" id="c8y-Kn-yYS"/>
-                                </connections>
                             </button>
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="checkNewDIY" id="mJ4-iW-Ami"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -848,6 +846,6 @@
         <image name="help2" width="220" height="220"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="c8y-Kn-yYS"/>
+        <segue reference="mJ4-iW-Ami"/>
     </inferredMetricsTieBreakers>
 </document>
