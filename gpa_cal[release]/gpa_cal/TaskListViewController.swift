@@ -17,6 +17,8 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
     @IBOutlet weak var earnedMark: UILabel!
     @IBOutlet weak var past: UILabel!
     @IBOutlet weak var effort: UILabel!
+    @IBOutlet weak var addButton: UIButton!
+    @IBOutlet weak var analyzeButton: UIButton!
     
     var course: Course!
 
@@ -24,7 +26,8 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(red: 42/255, green: 200/255, blue: 202/255, alpha: 1);
-        
+        addButton.layer.backgroundColor = UIColor(red:84/255, green: 232/255, blue: 233/255, alpha: 1).CGColor
+        analyzeButton.layer.backgroundColor = UIColor(red:84/255, green: 232/255, blue: 233/255, alpha: 1).CGColor
         TaskTable.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 300))
         
         title = course.name
@@ -93,8 +96,8 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
         cell.totalScore.layer.backgroundColor = UIColor(red: 234/255, green: 234/255, blue: 234/255, alpha: 1).CGColor;
         cell.totalScore.layer.cornerRadius = 10
         cell.totalScore.tag = indexPath.row
-        cell.percent.text = String(format:"%.2f",(course.taskList[indexPath.row].getPercent()*100)) + "%"
-        cell.point.text = String(format:"%.2f %",(course.taskList[indexPath.row].getPoint()))
+        cell.percent.text = String(format:"%.1f",(course.taskList[indexPath.row].getPercent()*100)) + "%"
+        cell.point.text = String(format:"%.1f %",(course.taskList[indexPath.row].getPoint()))
         
         
         //cell.backgroundColor = UIColor.clearColor()
@@ -111,7 +114,7 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
         if enter == 0 {
             return "0"
         } else {
-            return String(format:"%.2f", enter)
+            return String(format:"%.1f", enter)
         }
     }
     

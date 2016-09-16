@@ -26,6 +26,17 @@ class CustomViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        CourseName.layer.backgroundColor = UIColor(red: 234/255, green: 234/255, blue: 234/255, alpha: 1).CGColor
+        CourseName.layer.cornerRadius = 10
+        prof.layer.backgroundColor = UIColor(red: 234/255, green: 234/255, blue: 234/255, alpha: 1).CGColor
+        prof.layer.cornerRadius = 10
+        testNum.layer.backgroundColor = UIColor(red: 234/255, green: 234/255, blue: 234/255, alpha: 1).CGColor
+        testNum.layer.cornerRadius = 10
+        assignNum.layer.backgroundColor = UIColor(red: 234/255, green: 234/255, blue: 234/255, alpha: 1).CGColor
+        assignNum.layer.cornerRadius = 10
+        quizNum.layer.backgroundColor = UIColor(red: 234/255, green: 234/255, blue: 234/255, alpha: 1).CGColor
+        quizNum.layer.cornerRadius = 10
+        
         let tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(CustomViewController.DismissKeyboard))
         self.view.addGestureRecognizer(tap)
         

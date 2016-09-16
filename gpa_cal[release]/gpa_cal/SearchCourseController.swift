@@ -10,6 +10,7 @@ import UIKit
 
 class SearchCourseController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchResultsUpdating {
     
+    @IBOutlet weak var customButton: UIButton!
     
     @IBOutlet weak var searchResult: UITableView!
     var sc: UISearchController!
@@ -172,15 +173,15 @@ class SearchCourseController: UIViewController, UITableViewDataSource, UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.view.backgroundColor = UIColor(red: 42/255, green: 200/255, blue: 202/255, alpha: 1);
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
         sc = UISearchController(searchResultsController: nil)
         searchResult.tableHeaderView = sc.searchBar
         sc.searchBar.placeholder = "e.g. CSC108F"
         sc.searchBar.searchBarStyle = .Minimal
         sc.searchResultsUpdater = self
-        
         sc.dimsBackgroundDuringPresentation = false
+        customButton.layer.backgroundColor = UIColor(red:84/255, green: 232/255, blue: 233/255, alpha: 1).CGColor
         // Do any additional setup after loading the view, typically from a nib.
     }
     
