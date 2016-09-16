@@ -12,6 +12,7 @@ class SearchCourseController: UIViewController, UITableViewDataSource, UITableVi
     
     @IBOutlet weak var customButton: UIButton!
     
+    
     @IBOutlet weak var searchResult: UITableView!
     var sc: UISearchController!
     

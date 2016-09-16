@@ -153,8 +153,8 @@ class Course {
             return "You won't achieve \(grade)/\(target)%"
         } else {
             let diffPercent = (diff / undoTaskRatio) * 100
-            let diffStr = String(format: "%.2f", diff)
-            let dpStr = String(format: "%.2f", diffPercent)
+            let diffStr = String(format: "%.1f", diff)
+            let dpStr = String(format: "%.1f", diffPercent)
             return "In order to get a(n) \(grade) / \(target) in this Course\nYou need \(diffStr) points.\n\nYou are recommended to get an average of \(dpStr)% out of all left grade AT Least\n"
         }
         

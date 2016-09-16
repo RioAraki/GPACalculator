@@ -17,6 +17,7 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
     @IBOutlet weak var earnedMark: UILabel!
     @IBOutlet weak var past: UILabel!
     @IBOutlet weak var effort: UILabel!
+
     @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var analyzeButton: UIButton!
     
@@ -160,13 +161,13 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
         //course.save("\(self.index)")
     }
 
-    
-    //add new task
-    @IBAction func addTask(sender:AnyObject) {
+        //add new task
+    @IBAction func addTask(sender: AnyObject) {
         course.taskList.append(Task(name: "", ratio: 0));
         TaskTable.reloadData()
         course.save(course.order)
     }
+    
     
     //pop a sample of task
     @IBAction func popSample() {

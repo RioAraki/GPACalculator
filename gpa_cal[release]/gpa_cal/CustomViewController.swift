@@ -16,6 +16,7 @@ class CustomViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     @IBOutlet weak var testNum: UITextField!
     @IBOutlet weak var assignNum: UITextField!
     @IBOutlet weak var quizNum: UITextField!
+    @IBOutlet weak var confirmButton: UIButton!
     
     
     let pickerTerms = ["Year", "Fall", "Winter"]
@@ -36,6 +37,7 @@ class CustomViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         assignNum.layer.cornerRadius = 10
         quizNum.layer.backgroundColor = UIColor(red: 234/255, green: 234/255, blue: 234/255, alpha: 1).CGColor
         quizNum.layer.cornerRadius = 10
+        
         
         let tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(CustomViewController.DismissKeyboard))
         self.view.addGestureRecognizer(tap)
