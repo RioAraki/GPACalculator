@@ -73,7 +73,7 @@ class CustomViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "checkNewDIY" {
             let destVC = segue.destinationViewController as! ViewController
-            var tmp = "N/A"
+            var tmp = "N/A " + termPR[termPicker.selectedRowInComponent(0)]
             if let name = CourseName.text {
                 if name != "" {
                     tmp = CourseName.text! + termPR[termPicker.selectedRowInComponent(0)]
