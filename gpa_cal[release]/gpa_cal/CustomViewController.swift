@@ -62,20 +62,22 @@ class CustomViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
             let destVC = segue.destinationViewController as! ViewController
             var tmp = "N/A"
             if let name = CourseName.text {
-                tmp = name + termPR[termPicker.selectedRowInComponent(0)]
+                if name != "" {
+                    tmp = CourseName.text! + termPR[termPicker.selectedRowInComponent(0)]
+                }
             }
             let c = Course(order: "\(self.home.diyCourses.count)", name: tmp, term: termPR[termPicker.selectedRowInComponent(0)], taskList: [Task(name: "Final", ratio: 0)], added: 1, diy: 1);
             if let p = self.prof.text {
                 c.addProf(p)
             }
-            if let t = self.testNum.text {
-                c.addTest(Int(t)!)
+            if let t = Int(self.testNum.text!) {
+                c.addTest(t)
             }
-            if let a = self.assignNum.text {
-                c.addAssign(Int(a)!)
+            if let a = Int(self.assignNum.text!) {
+                c.addAssign(a)
             }
-            if let q = self.quizNum.text {
-                c.addQuiz(Int(q)!)
+            if let q = Int(self.quizNum.text!) {
+                c.addQuiz(q)
             }
             c.save(c.order)
             destVC.diyCourses.append(c)
