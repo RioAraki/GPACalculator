@@ -939,20 +939,29 @@ That's it. </string>
                                     <action selector="doneBtnTapped:" destination="6DD-aQ-LKw" eventType="touchUpInside" id="SMM-xO-8mu"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bC-UD-adp">
+                                <rect key="frame" x="279" y="65" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="KgL-8c-Zau" firstAttribute="centerX" secondItem="oxP-KO-KQb" secondAttribute="centerX" id="2Uc-83-bEp"/>
+                            <constraint firstItem="9bC-UD-adp" firstAttribute="top" secondItem="qnh-hW-4lQ" secondAttribute="bottom" constant="45" id="AdQ-gS-5gI"/>
                             <constraint firstItem="2AJ-qb-w1e" firstAttribute="top" secondItem="qnh-hW-4lQ" secondAttribute="bottom" constant="125" id="OQl-Kb-BxA"/>
                             <constraint firstItem="2AJ-qb-w1e" firstAttribute="centerX" secondItem="oxP-KO-KQb" secondAttribute="centerX" id="PLR-KE-aDc"/>
                             <constraint firstItem="KgL-8c-Zau" firstAttribute="top" secondItem="2AJ-qb-w1e" secondAttribute="bottom" constant="18" id="Pba-kN-DQX"/>
                             <constraint firstAttribute="bottom" secondItem="2cI-zl-Uws" secondAttribute="bottom" constant="20" symbolic="YES" id="iwW-oF-PnB"/>
                             <constraint firstItem="2cI-zl-Uws" firstAttribute="centerX" secondItem="oxP-KO-KQb" secondAttribute="centerX" id="kNy-lU-ZJo"/>
+                            <constraint firstItem="9bC-UD-adp" firstAttribute="centerX" secondItem="2AJ-qb-w1e" secondAttribute="centerX" id="xnz-Gz-3gI"/>
                             <constraint firstItem="2AJ-qb-w1e" firstAttribute="centerY" secondItem="oxP-KO-KQb" secondAttribute="centerY" id="yWS-ip-1jk"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="doneBtn" destination="KgL-8c-Zau" id="ltj-Kb-Cnt"/>
+                        <outlet property="label" destination="9bC-UD-adp" id="JiW-6x-kqn"/>
                         <outlet property="pageCtrl" destination="2cI-zl-Uws" id="xQ2-Lq-kdG"/>
                         <outlet property="tutImageView" destination="2AJ-qb-w1e" id="kZg-fY-U22"/>
                     </connections>

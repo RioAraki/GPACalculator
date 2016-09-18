@@ -13,6 +13,7 @@ class GuiderContentViewController: UIViewController {
     @IBOutlet weak var doneBtn: UIButton!
     @IBOutlet weak var pageCtrl: UIPageControl!
     
+    @IBOutlet weak var label: UILabel!
     @IBOutlet weak var tutImageView: UIImageView!
     
     @IBAction func doneBtnTapped(sender: UIButton) {
@@ -24,11 +25,13 @@ class GuiderContentViewController: UIViewController {
     
     var index = 0
     var imageName = ""
+    var labelContent = ""
     override func viewDidLoad() {
         super.viewDidLoad()
 
         pageCtrl.currentPage = index
         tutImageView.image = UIImage(named: imageName)
+        label.text = labelContent
         
         if index == 2 {
             doneBtn.hidden = false

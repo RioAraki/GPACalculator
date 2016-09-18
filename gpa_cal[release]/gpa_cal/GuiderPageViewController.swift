@@ -11,6 +11,7 @@ import UIKit
 class GuiderPageViewController: UIPageViewController, UIPageViewControllerDataSource {
 
     var images = ["TUTORIAL1", "TUTORIAL2", "TUTORIAL3"]
+    var labelContents = ["Calcelate your score automatically", "Accumulate all entities", "All grades would be added"]
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
         
@@ -35,6 +36,7 @@ class GuiderPageViewController: UIPageViewController, UIPageViewControllerDataSo
             if let contentVC = storyboard?.instantiateViewControllerWithIdentifier("GuiderContentController") as? GuiderContentViewController {
             
                 contentVC.imageName = images[index]
+                contentVC.labelContent = labelContents[index]
                 contentVC.index = index
                 
                 return contentVC
