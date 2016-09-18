@@ -172,7 +172,14 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
     //pop a sample of task
     @IBAction func popSample() {
         
-        let alertcontroller = UIAlertController(title: "\n\n\n\n\n\n\n\n\n\n\n\n", message: "\n\n\n\n\n\n\n", preferredStyle: UIAlertControllerStyle.Alert)
+        //super.viewDidAppear(true)
+        
+        if let guiderVC = storyboard?.instantiateViewControllerWithIdentifier("GuideController") as? GuiderPageViewController {
+            presentViewController(guiderVC, animated: true, completion: nil)
+        }
+        
+        
+        /*let alertcontroller = UIAlertController(title: "\n\n\n\n\n\n\n\n\n\n\n\n", message: "\n\n\n\n\n\n\n", preferredStyle: UIAlertControllerStyle.Alert)
         
         let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
 
@@ -189,7 +196,7 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
         alertcontroller.addAction(okAction)
         
         //呈现出视图控制器
-        self.presentViewController(alertcontroller, animated: true, completion: nil)
+        self.presentViewController(alertcontroller, animated: true, completion: nil)*/
     }
 
     
@@ -248,11 +255,18 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     override func viewDidAppear(animated: Bool) {
-        let def = NSUserDefaults.standardUserDefaults()
-        if !def.boolForKey("guideShowed") {
-            self.popSample()
-        }
+        //super.viewDidAppear(true)
         
+        
+        
+        let def = NSUserDefaults.standardUserDefaults()
+        if def.boolForKey("guideShowed") {
+            //self.popSample()
+            return
+        }
+        if let guiderVC = storyboard?.instantiateViewControllerWithIdentifier("GuideController") as? GuiderPageViewController {
+            presentViewController(guiderVC, animated: true, completion: nil)
+        }
         
     }
    

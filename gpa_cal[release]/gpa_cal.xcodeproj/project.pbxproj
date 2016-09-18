@@ -18,6 +18,8 @@
 		526E55FC1D4426890033D163 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526E55FB1D4426880033D163 /* SearchTableViewCell.swift */; };
 		527A82401D4ABA8A000A2B08 /* Task1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527A823F1D4ABA8A000A2B08 /* Task1.swift */; };
 		527A82421D4ABEB2000A2B08 /* Course1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527A82411D4ABEB2000A2B08 /* Course1.swift */; };
+		528F2B7C1D8DBE9C0039C6A6 /* GuiderContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528F2B7B1D8DBE9C0039C6A6 /* GuiderContentViewController.swift */; };
+		528F2B7E1D8DED030039C6A6 /* GuiderPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528F2B7D1D8DED030039C6A6 /* GuiderPageViewController.swift */; };
 		5291C67B1D306A2800245116 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5291C67A1D306A2800245116 /* AppDelegate.swift */; };
 		5291C67D1D306A2800245116 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5291C67C1D306A2800245116 /* ViewController.swift */; };
 		5291C6801D306A2800245116 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5291C67E1D306A2800245116 /* Main.storyboard */; settings = {ASSET_TAGS = (1, 2, 3, ); }; };
@@ -64,6 +66,8 @@
 		526E55FB1D4426880033D163 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		527A823F1D4ABA8A000A2B08 /* Task1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task1.swift; sourceTree = "<group>"; };
 		527A82411D4ABEB2000A2B08 /* Course1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course1.swift; sourceTree = "<group>"; };
+		528F2B7B1D8DBE9C0039C6A6 /* GuiderContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuiderContentViewController.swift; sourceTree = "<group>"; };
+		528F2B7D1D8DED030039C6A6 /* GuiderPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuiderPageViewController.swift; sourceTree = "<group>"; };
 		5291C6771D306A2800245116 /* gpa_cal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gpa_cal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5291C67A1D306A2800245116 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5291C67C1D306A2800245116 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -179,6 +183,7 @@
 		5291C6791D306A2800245116 /* gpa_cal */ = {
 			isa = PBXGroup;
 			children = (
+				528F2B7B1D8DBE9C0039C6A6 /* GuiderContentViewController.swift */,
 				522107471D6439FF0066CE94 /* PDChart */,
 				5291C67A1D306A2800245116 /* AppDelegate.swift */,
 				52CCBB521D69FDD9002691F5 /* preset */,
@@ -187,6 +192,7 @@
 				5293CC541D84F319009BA0B8 /* HomeTableViewCell.swift */,
 				52DA53D51D43183D00BA82D8 /* TaskTableViewCell.swift */,
 				52BA89911D6783AA00EEC39E /* CustomViewController.swift */,
+				528F2B7D1D8DED030039C6A6 /* GuiderPageViewController.swift */,
 				5291C67C1D306A2800245116 /* ViewController.swift */,
 				5291C67E1D306A2800245116 /* Main.storyboard */,
 				522107391D62C3B70066CE94 /* GPAListViewController.swift */,
@@ -295,7 +301,7 @@
 				TargetAttributes = {
 					5291C6761D306A2800245116 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = MU526SVHJ7;
+						DevelopmentTeam = P6LL7X8UML;
 					};
 					5291C68D1D306A2800245116 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -374,7 +380,9 @@
 				52BA89921D6783AB00EEC39E /* CustomViewController.swift in Sources */,
 				52DA53D61D43183D00BA82D8 /* TaskTableViewCell.swift in Sources */,
 				5291C67D1D306A2800245116 /* ViewController.swift in Sources */,
+				528F2B7E1D8DED030039C6A6 /* GuiderPageViewController.swift in Sources */,
 				522107541D6439FF0066CE94 /* PDLineChart.swift in Sources */,
+				528F2B7C1D8DBE9C0039C6A6 /* GuiderContentViewController.swift in Sources */,
 				522107531D6439FF0066CE94 /* PDChartAxesComponent.swift in Sources */,
 				52DEF45E1D4168FA006A16D2 /* SearchCourseController.swift in Sources */,
 				522107511D6439FF0066CE94 /* PDBarChart.swift in Sources */,
@@ -529,7 +537,7 @@
 				INFOPLIST_FILE = gpa_cal/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.graplystudio.gpa1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.graplystudio.gpa-cal";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -546,7 +554,7 @@
 				INFOPLIST_FILE = gpa_cal/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.graplystudio.gpa1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.graplystudio.gpa-cal";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;

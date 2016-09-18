@@ -906,7 +906,67 @@ That's it. </string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UpA-vF-Yoq" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Fu0-N9-cFj" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-224" y="-2"/>
+            <point key="canvasLocation" x="-254" y="-264"/>
+        </scene>
+        <!--Guider Content View Controller-->
+        <scene sceneID="XiP-ng-oAe">
+            <objects>
+                <viewController storyboardIdentifier="GuiderContentController" id="6DD-aQ-LKw" customClass="GuiderContentViewController" customModule="gpa_cal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qnh-hW-4lQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="7QM-hi-Lyv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oxP-KO-KQb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2AJ-qb-w1e">
+                                <rect key="frame" x="180" y="145" width="240" height="310"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Y6l-PP-ehq"/>
+                                </constraints>
+                            </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="2cI-zl-Uws">
+                                <rect key="frame" x="281" y="543" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="currentPageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KgL-8c-Zau">
+                                <rect key="frame" x="273" y="473" width="55" height="30"/>
+                                <state key="normal" title="Try now"/>
+                                <connections>
+                                    <action selector="doneBtnTapped:" destination="6DD-aQ-LKw" eventType="touchUpInside" id="SMM-xO-8mu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KgL-8c-Zau" firstAttribute="centerX" secondItem="oxP-KO-KQb" secondAttribute="centerX" id="2Uc-83-bEp"/>
+                            <constraint firstItem="2AJ-qb-w1e" firstAttribute="top" secondItem="qnh-hW-4lQ" secondAttribute="bottom" constant="125" id="OQl-Kb-BxA"/>
+                            <constraint firstItem="2AJ-qb-w1e" firstAttribute="centerX" secondItem="oxP-KO-KQb" secondAttribute="centerX" id="PLR-KE-aDc"/>
+                            <constraint firstItem="KgL-8c-Zau" firstAttribute="top" secondItem="2AJ-qb-w1e" secondAttribute="bottom" constant="18" id="Pba-kN-DQX"/>
+                            <constraint firstAttribute="bottom" secondItem="2cI-zl-Uws" secondAttribute="bottom" constant="20" symbolic="YES" id="iwW-oF-PnB"/>
+                            <constraint firstItem="2cI-zl-Uws" firstAttribute="centerX" secondItem="oxP-KO-KQb" secondAttribute="centerX" id="kNy-lU-ZJo"/>
+                            <constraint firstItem="2AJ-qb-w1e" firstAttribute="centerY" secondItem="oxP-KO-KQb" secondAttribute="centerY" id="yWS-ip-1jk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="doneBtn" destination="KgL-8c-Zau" id="ltj-Kb-Cnt"/>
+                        <outlet property="pageCtrl" destination="2cI-zl-Uws" id="xQ2-Lq-kdG"/>
+                        <outlet property="tutImageView" destination="2AJ-qb-w1e" id="kZg-fY-U22"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qyG-SA-aAX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-254" y="379"/>
+        </scene>
+        <!--Guider Page View Controller-->
+        <scene sceneID="z8T-oa-mPY">
+            <objects>
+                <pageViewController storyboardIdentifier="GuideController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="KqM-tU-iGz" customClass="GuiderPageViewController" customModule="gpa_cal" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GYw-G1-OkU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="415" y="-211"/>
         </scene>
     </scenes>
     <resources>
