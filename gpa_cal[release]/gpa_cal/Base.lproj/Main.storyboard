@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Hqy-Wo-3Nj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Hqy-Wo-3Nj">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -516,7 +516,7 @@ That's it. </string>
             </objects>
             <point key="canvasLocation" x="1807" y="411"/>
         </scene>
-        <!--Search Course Controller-->
+        <!--Search Course-->
         <scene sceneID="It8-lP-Osv">
             <objects>
                 <viewController storyboardIdentifier="SearchCourse" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rov-SQ-QoQ" customClass="SearchCourseController" customModule="gpa_cal" customModuleProvider="target" sceneMemberID="viewController">
@@ -529,7 +529,7 @@ That's it. </string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5lb-R9-tzH">
-                                <rect key="frame" x="0.0" y="20" width="600" height="525"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="545"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="410" id="wRU-oI-odb"/>
@@ -585,7 +585,7 @@ That's it. </string>
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aA0-1q-cCL">
-                                <rect key="frame" x="40" y="558" width="521" height="30"/>
+                                <rect key="frame" x="40" y="555" width="521" height="30"/>
                                 <color key="backgroundColor" red="0.25490196079999999" green="0.41176470590000003" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="+ Custom"/>
@@ -601,12 +601,12 @@ That's it. </string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="KlR-gn-RbG" firstAttribute="top" secondItem="aA0-1q-cCL" secondAttribute="bottom" multiplier="1.02" id="7Ca-p1-FTU"/>
+                            <constraint firstItem="KlR-gn-RbG" firstAttribute="top" secondItem="aA0-1q-cCL" secondAttribute="bottom" multiplier="1.025" id="7Ca-p1-FTU"/>
                             <constraint firstItem="aA0-1q-cCL" firstAttribute="centerX" secondItem="4sY-VW-irM" secondAttribute="centerX" id="9Pn-oO-bdS"/>
                             <constraint firstItem="5lb-R9-tzH" firstAttribute="leading" secondItem="4sY-VW-irM" secondAttribute="leading" id="AAE-7M-AG9"/>
                             <constraint firstItem="aA0-1q-cCL" firstAttribute="centerX" secondItem="5lb-R9-tzH" secondAttribute="centerX" id="Htr-0J-oKU"/>
                             <constraint firstItem="KlR-gn-RbG" firstAttribute="top" secondItem="5lb-R9-tzH" secondAttribute="bottom" multiplier="1.1" id="gw5-Xa-sf3"/>
-                            <constraint firstItem="5lb-R9-tzH" firstAttribute="top" secondItem="4sY-VW-irM" secondAttribute="top" constant="20" symbolic="YES" id="jaz-Jd-6OM"/>
+                            <constraint firstItem="5lb-R9-tzH" firstAttribute="top" secondItem="4sY-VW-irM" secondAttribute="top" id="jaz-Jd-6OM"/>
                             <constraint firstItem="aA0-1q-cCL" firstAttribute="leading" secondItem="4sY-VW-irM" secondAttribute="leadingMargin" constant="20" id="moF-bj-6AO"/>
                             <constraint firstItem="KlR-gn-RbG" firstAttribute="top" secondItem="aA0-1q-cCL" secondAttribute="bottom" constant="25" id="uCh-7E-YXC"/>
                         </constraints>
@@ -616,6 +616,7 @@ That's it. </string>
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Search Course" id="KbQ-f8-HzX"/>
                     <connections>
                         <outlet property="customButton" destination="aA0-1q-cCL" id="oro-24-9mf"/>
                         <outlet property="searchResult" destination="5lb-R9-tzH" id="7iH-uN-FSH"/>
