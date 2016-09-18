@@ -30,7 +30,6 @@
 		5291C69E1D306A2800245116 /* gpa_calUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5291C69D1D306A2800245116 /* gpa_calUITests.swift */; };
 		5293CC551D84F319009BA0B8 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5293CC541D84F319009BA0B8 /* HomeTableViewCell.swift */; };
 		52BA89921D6783AB00EEC39E /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BA89911D6783AA00EEC39E /* CustomViewController.swift */; };
-		52CCBB511D69FB1F002691F5 /* preset0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52CCBB501D69FB1F002691F5 /* preset0.plist */; };
 		52CCBB531D69FDD9002691F5 /* preset in Resources */ = {isa = PBXBuildFile; fileRef = 52CCBB521D69FDD9002691F5 /* preset */; };
 		52DA53D41D42F4B500BA82D8 /* TaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA53D31D42F4B500BA82D8 /* TaskTableViewController.swift */; };
 		52DA53D61D43183D00BA82D8 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA53D51D43183D00BA82D8 /* TaskTableViewCell.swift */; };
@@ -84,7 +83,6 @@
 		5291C69F1D306A2800245116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5293CC541D84F319009BA0B8 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		52BA89911D6783AA00EEC39E /* CustomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
-		52CCBB501D69FB1F002691F5 /* preset0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = preset0.plist; sourceTree = "<group>"; };
 		52CCBB521D69FDD9002691F5 /* preset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = preset; sourceTree = "<group>"; };
 		52DA53D31D42F4B500BA82D8 /* TaskTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTableViewController.swift; sourceTree = "<group>"; };
 		52DA53D51D43183D00BA82D8 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
@@ -187,7 +185,6 @@
 				522107471D6439FF0066CE94 /* PDChart */,
 				5291C67A1D306A2800245116 /* AppDelegate.swift */,
 				52CCBB521D69FDD9002691F5 /* preset */,
-				52CCBB501D69FB1F002691F5 /* preset0.plist */,
 				526E55FB1D4426880033D163 /* SearchTableViewCell.swift */,
 				5293CC541D84F319009BA0B8 /* HomeTableViewCell.swift */,
 				52DA53D51D43183D00BA82D8 /* TaskTableViewCell.swift */,
@@ -341,7 +338,6 @@
 				52CCBB531D69FDD9002691F5 /* preset in Resources */,
 				5291C6881D306A2800245116 /* LaunchScreen.storyboard in Resources */,
 				5291C6851D306A2800245116 /* Assets.xcassets in Resources */,
-				52CCBB511D69FB1F002691F5 /* preset0.plist in Resources */,
 				5291C6801D306A2800245116 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

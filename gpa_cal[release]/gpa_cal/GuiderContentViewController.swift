@@ -8,11 +8,11 @@
 
 import UIKit
 
-class GuiderContentViewController: UIViewController, UIPageViewControllerDataSource {
+class GuiderContentViewController: UIViewController {
 
     @IBOutlet weak var doneBtn: UIButton!
     @IBOutlet weak var pageCtrl: UIPageControl!
-    A
+    
     @IBOutlet weak var tutImageView: UIImageView!
     
     @IBAction func doneBtnTapped(sender: UIButton) {
@@ -21,8 +21,9 @@ class GuiderContentViewController: UIViewController, UIPageViewControllerDataSou
         def.setBool(true, forKey: "guideShowed")
 
     }
+    
     var index = 0
-    var images = ["TUTORIAL1", "TUTORIAL2", "TUTORIAL3"]
+    var imageName = ""
     override func viewDidLoad() {
         super.viewDidLoad()
 

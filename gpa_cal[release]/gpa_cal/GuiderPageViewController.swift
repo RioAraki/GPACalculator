@@ -10,7 +10,7 @@ import UIKit
 
 class GuiderPageViewController: UIPageViewController, UIPageViewControllerDataSource {
 
-    var images = ["Tutorial", "Tutorial", "Tutorial"]
+    var images = ["TUTORIAL1", "TUTORIAL2", "TUTORIAL3"]
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
         
