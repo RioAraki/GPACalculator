@@ -353,8 +353,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qwH-Rp-iwQ">
-                                <rect key="frame" x="0.0" y="-44" width="600" height="503"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qwH-Rp-iwQ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="459"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Course0" rowHeight="50" id="g1c-YZ-XY8" customClass="HomeTableViewCell" customModule="gpa_cal" customModuleProvider="target">
@@ -415,6 +415,9 @@
                                         <exclude reference="biI-gA-7YS"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <segue destination="Yly-mj-8Hr" kind="show" id="D6f-q1-Xi8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -449,6 +452,69 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1138" y="411"/>
+        </scene>
+        <!--About Us-->
+        <scene sceneID="4Os-bt-hPj">
+            <objects>
+                <viewController id="Yly-mj-8Hr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xgh-Kj-zlc"/>
+                        <viewControllerLayoutGuide type="bottom" id="yym-wD-pUm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9eT-rA-ijS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q70-Ys-0Vn">
+                                <rect key="frame" x="163" y="184" width="275" height="154"/>
+                                <string key="text">We are three UofT undergraduates. 
+2 CS + 1 Math 
+The reason we developed this app 
+is just because we are boring, 
+and want to do some cool stuff. 
+
+That's it. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJc-8l-jAh">
+                                <rect key="frame" x="163" y="346" width="275" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="RlZ-Xe-Vqi"/>
+                                </constraints>
+                                <string key="text">Graply Studio
+陈立哲 Lucas Chen
+李钺 Rio Li
+刘雪阳 Derek Liu</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yym-wD-pUm" firstAttribute="top" secondItem="PJc-8l-jAh" secondAttribute="bottom" constant="169" id="52o-OY-jcs"/>
+                            <constraint firstItem="PJc-8l-jAh" firstAttribute="centerY" secondItem="Q70-Ys-0Vn" secondAttribute="centerY" id="Bw0-cm-O4P"/>
+                            <constraint firstItem="PJc-8l-jAh" firstAttribute="centerX" secondItem="Q70-Ys-0Vn" secondAttribute="centerX" id="I5s-Ew-WXw"/>
+                            <constraint firstItem="Q70-Ys-0Vn" firstAttribute="centerX" secondItem="9eT-rA-ijS" secondAttribute="centerX" id="Jem-Qf-7Dy"/>
+                            <constraint firstItem="Q70-Ys-0Vn" firstAttribute="trailing" secondItem="PJc-8l-jAh" secondAttribute="trailing" id="Pfg-aZ-3OT"/>
+                            <constraint firstItem="PJc-8l-jAh" firstAttribute="top" secondItem="Q70-Ys-0Vn" secondAttribute="bottom" constant="8" symbolic="YES" id="dUe-0K-C6j"/>
+                            <constraint firstItem="PJc-8l-jAh" firstAttribute="top" secondItem="Q70-Ys-0Vn" secondAttribute="bottom" constant="8" symbolic="YES" id="frv-WE-ojV"/>
+                            <constraint firstItem="Q70-Ys-0Vn" firstAttribute="top" secondItem="Xgh-Kj-zlc" secondAttribute="bottom" constant="120" id="kC3-7G-oAJ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Bw0-cm-O4P"/>
+                                <exclude reference="dUe-0K-C6j"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="About Us" id="FmK-DW-Q2R"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a2k-Pn-gGV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1807" y="411"/>
         </scene>
         <!--Search Course Controller-->
         <scene sceneID="It8-lP-Osv">
