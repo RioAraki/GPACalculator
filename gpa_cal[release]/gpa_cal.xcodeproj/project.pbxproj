@@ -34,6 +34,7 @@
 		52DA53D41D42F4B500BA82D8 /* TaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA53D31D42F4B500BA82D8 /* TaskTableViewController.swift */; };
 		52DA53D61D43183D00BA82D8 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA53D51D43183D00BA82D8 /* TaskTableViewCell.swift */; };
 		52DEF45E1D4168FA006A16D2 /* SearchCourseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DEF45D1D4168FA006A16D2 /* SearchCourseController.swift */; };
+		52FE97931D8F72BE003FE030 /* preset50.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52FE97921D8F72BE003FE030 /* preset50.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		52DA53D31D42F4B500BA82D8 /* TaskTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTableViewController.swift; sourceTree = "<group>"; };
 		52DA53D51D43183D00BA82D8 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		52DEF45D1D4168FA006A16D2 /* SearchCourseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCourseController.swift; sourceTree = "<group>"; };
+		52FE97921D8F72BE003FE030 /* preset50.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = preset50.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 				52CCBB521D69FDD9002691F5 /* preset */,
 				526E55FB1D4426880033D163 /* SearchTableViewCell.swift */,
 				5293CC541D84F319009BA0B8 /* HomeTableViewCell.swift */,
+				52FE97921D8F72BE003FE030 /* preset50.plist */,
 				52DA53D51D43183D00BA82D8 /* TaskTableViewCell.swift */,
 				52BA89911D6783AA00EEC39E /* CustomViewController.swift */,
 				528F2B7D1D8DED030039C6A6 /* GuiderPageViewController.swift */,
@@ -339,6 +342,7 @@
 				5291C6881D306A2800245116 /* LaunchScreen.storyboard in Resources */,
 				5291C6851D306A2800245116 /* Assets.xcassets in Resources */,
 				5291C6801D306A2800245116 /* Main.storyboard in Resources */,
+				52FE97931D8F72BE003FE030 /* preset50.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

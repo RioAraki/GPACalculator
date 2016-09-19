@@ -534,6 +534,13 @@ That's it. </string>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="410" id="wRU-oI-odb"/>
                                 </constraints>
+                                <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2wW-6N-Lo5">
+                                    <rect key="frame" x="0.0" y="136" width="600" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Result0" id="1FS-XJ-REe" customClass="SearchTableViewCell" customModule="gpa_cal" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="600" height="44"/>
@@ -619,6 +626,7 @@ That's it. </string>
                     <navigationItem key="navigationItem" title="Search Course" id="KbQ-f8-HzX"/>
                     <connections>
                         <outlet property="customButton" destination="aA0-1q-cCL" id="oro-24-9mf"/>
+                        <outlet property="footer" destination="2wW-6N-Lo5" id="bii-1y-6SP"/>
                         <outlet property="searchResult" destination="5lb-R9-tzH" id="7iH-uN-FSH"/>
                     </connections>
                 </viewController>

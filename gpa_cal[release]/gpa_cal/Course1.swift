@@ -176,6 +176,7 @@ class Course {
     
     func save(order: String){
         var result = [String]()
+        result.append(self.prof)
         result.append(self.name)
         result.append(self.term)
         result.append("\(self.added)")

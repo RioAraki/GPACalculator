@@ -191,8 +191,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func loading(list: [String], order: String, diy: Int) -> Course {
         print(list[0])
-        let result = Course(order: order, name: list[0], term: list[1], taskList: [Task](), added: Int(list[2])!, diy: diy)
-        var index: Int = 3
+        let result = Course(order: order, name: list[1], term: list[2], taskList: [Task](), added: Int(list[3])!, diy: diy)
+        var index: Int = 4
         var tmp:[String];
         while index < list.count {
             tmp = [list[index]] + [list[index+1]] + [list[index+2]] + [list[index+3]]

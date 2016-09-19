@@ -12,6 +12,7 @@ class SearchCourseController: UIViewController, UITableViewDataSource, UITableVi
     
     @IBOutlet weak var customButton: UIButton!
     
+    @IBOutlet weak var footer: UILabel!
     
     @IBOutlet weak var searchResult: UITableView!
     var sc: UISearchController!
@@ -26,6 +27,7 @@ class SearchCourseController: UIViewController, UITableViewDataSource, UITableVi
             textToSearch = textToSearch.uppercaseString
             searchFilter(textToSearch)
             searchResult.reloadData()
+            
         }
     }
     
@@ -36,6 +38,12 @@ class SearchCourseController: UIViewController, UITableViewDataSource, UITableVi
         sr = presetCourses.filter({ (c) -> Bool in
             return c.name.containsString(textToSearch)
         })
+        
+        if sr.count == 0 {
+            footer.text = "Want to see your courses here? Send your syllabus to : contact@graplystudio.com"
+        } else {
+            footer.text = ""
+        }
         for p in presetCourses{
             print(p.name)
         }
@@ -61,6 +69,7 @@ class SearchCourseController: UIViewController, UITableViewDataSource, UITableVi
         let r : Course
         if sc.active {
             r = sr[indexPath.row]
+            
         } else {
             r = presetCourses[indexPath.row]
         }
@@ -183,6 +192,8 @@ class SearchCourseController: UIViewController, UITableViewDataSource, UITableVi
         sc.searchResultsUpdater = self
         sc.dimsBackgroundDuringPresentation = false
         customButton.layer.backgroundColor = UIColor(red:84/255, green: 232/255, blue: 233/255, alpha: 1).CGColor
+        
+        footer.text = ""
         // Do any additional setup after loading the view, typically from a nib.
     }
     
