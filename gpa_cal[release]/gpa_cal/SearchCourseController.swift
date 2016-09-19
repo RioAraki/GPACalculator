@@ -40,7 +40,7 @@ class SearchCourseController: UIViewController, UITableViewDataSource, UITableVi
         })
         
         if sr.count == 0 {
-            footer.text = "Want to see your courses here? Send your syllabus to : contact@graplystudio.com"
+            footer.text = " Want to see your courses here?\n Send your syllabus to :\n contact@graplystudio.com"
         } else {
             footer.text = ""
         }
