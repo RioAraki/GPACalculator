@@ -3,35 +3,47 @@
 <plist version="1.0">
 <array>
 	<string></string>
-	<string>LIN203F</string>
-	<string>F</string>
+	<string>SPA100Y</string>
+	<string>Y</string>
 	<string>0</string>
-	<string>Attendance and participation</string>
+	<string>Reading and Writing Test1</string>
 	<string>10</string>
 	<string>0</string>
 	<string>0</string>
-	<string>Short quiz1</string>
+	<string>Reading and Writing Test2</string>
 	<string>10</string>
 	<string>0</string>
 	<string>0</string>
-	<string>Short quiz2</string>
+	<string>Reading and Writing Test3</string>
 	<string>10</string>
 	<string>0</string>
 	<string>0</string>
-	<string>Writing assignment1</string>
+	<string>Video1</string>
+	<string>6</string>
+	<string>0</string>
+	<string>0</string>
+	<string>Video2</string>
+	<string>6</string>
+	<string>0</string>
+	<string>0</string>
+	<string>Online Homework</string>
 	<string>10</string>
 	<string>0</string>
 	<string>0</string>
-	<string>Writing assignment2</string>
-	<string>10</string>
+	<string>Short Quizzes</string>
+	<string>6</string>
 	<string>0</string>
 	<string>0</string>
-	<string>Midterm</string>
-	<string>25</string>
+	<string>Participation</string>
+	<string>8</string>
 	<string>0</string>
 	<string>0</string>
 	<string>Final</string>
-	<string>35</string>
+	<string>34</string>
+	<string>0</string>
+	<string>0</string>
+	<string>Cultural Events</string>
+	<string>5</string>
 	<string>0</string>
 	<string>0</string>
 </array>

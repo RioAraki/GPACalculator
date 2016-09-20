@@ -2,36 +2,40 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <array>
-	<string>Jonathan Korman</string>
-	<string>APM346F Jonathan Korman</string>
-	<string>F</string>
+	<string></string>
+	<string>DRM100Y</string>
+	<string>Y</string>
 	<string>0</string>
-	<string>Homework1</string>
+	<string>First Semester Participation</string>
+	<string>15</string>
+	<string>0</string>
+	<string>0</string>
+	<string>Second Semester Participation</string>
+	<string>15</string>
+	<string>0</string>
+	<string>0</string>
+	<string>Performance1</string>
 	<string>5</string>
 	<string>0</string>
 	<string>0</string>
-	<string>Homework2</string>
+	<string>Performance2</string>
 	<string>5</string>
 	<string>0</string>
 	<string>0</string>
-	<string>Homework3</string>
+	<string>Performance3</string>
 	<string>5</string>
 	<string>0</string>
 	<string>0</string>
-	<string>Homework4</string>
+	<string>Performance4</string>
 	<string>5</string>
 	<string>0</string>
 	<string>0</string>
-	<string>Homework5</string>
-	<string>5</string>
+	<string>Essay</string>
+	<string>15</string>
 	<string>0</string>
 	<string>0</string>
-	<string>Term Test</string>
-	<string>30</string>
-	<string>0</string>
-	<string>0</string>
-	<string>Final Exam</string>
-	<string>45</string>
+	<string>Final</string>
+	<string>35</string>
 	<string>0</string>
 	<string>0</string>
 </array>

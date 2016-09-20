@@ -120,7 +120,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             try! fileManager.createDirectoryAtPath(presetFolder, withIntermediateDirectories: true, attributes: nil)
             
         }
-        presetCourses = loadPreset()
+        presetCourses = loadPreset().sort({$0.name < $1.name})
         if !diyBool {
             try! fileManager.createDirectoryAtPath(diyFolder, withIntermediateDirectories: true, attributes: nil)
         } else if diyCourses.isEmpty {
@@ -190,7 +190,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func loading(list: [String], order: String, diy: Int) -> Course {
-        print(list[0])
+        print(list[1])
+        print(order + "A")
         let result = Course(order: order, name: list[1], term: list[2], taskList: [Task](), added: Int(list[3])!, diy: diy)
         var index: Int = 4
         var tmp:[String];
@@ -210,25 +211,29 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func loadPreset() -> [Course]{
         var result = [Course]()
         let path =  NSHomeDirectory() + "/Documents/preset"
-        print(path)
+        //print(path)
         let manager = NSFileManager.defaultManager()
-        let contentInPath = try? manager.contentsOfDirectoryAtPath(path)
+        let contentInPath = try? manager.contentsOfDirectoryAtPath(path);
         
         print(contentInPath)
         let countFile = contentInPath?.count
         var index = 0
-        print("preset")
+        
         var tmpList = []
         if (countFile > 0) {
             print("A")
             while index < (countFile!) {
+                print(index)
                 tmpList = NSArray(contentsOfFile: path + "/preset\(index).plist")!
                 result.append(self.loading(tmpList as! [String], order: "\(index)", diy: 0))
                 index = index + 1
             }
          
         } else {
-            let plists = NSBundle.mainBundle().pathsForResourcesOfType("plist", inDirectory: "preset")
+            var plists = NSBundle.mainBundle().pathsForResourcesOfType("plist", inDirectory: "preset")
+            plists = plists.sort()
+            print(plists)
+        
             for f in plists {
                 tmpList = NSArray(contentsOfFile: f)!
                 result.append(self.loading(tmpList as! [String], order: "\(index)", diy: 0))

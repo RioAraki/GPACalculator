@@ -2,36 +2,32 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <array>
-	<string></string>
-	<string>LIN203F</string>
-	<string>F</string>
+	<string>Wolfson</string>
+	<string>ECO100Y Wolfson</string>
+	<string>Y</string>
 	<string>0</string>
-	<string>Attendance and participation</string>
-	<string>10</string>
-	<string>0</string>
-	<string>0</string>
-	<string>Short quiz1</string>
-	<string>10</string>
+	<string>Warm-up</string>
+	<string>2</string>
 	<string>0</string>
 	<string>0</string>
-	<string>Short quiz2</string>
-	<string>10</string>
+	<string>Test1</string>
+	<string>13</string>
 	<string>0</string>
 	<string>0</string>
-	<string>Writing assignment1</string>
-	<string>10</string>
+	<string>Test2</string>
+	<string>9</string>
 	<string>0</string>
 	<string>0</string>
-	<string>Writing assignment2</string>
-	<string>10</string>
+	<string>Test3</string>
+	<string>13</string>
 	<string>0</string>
 	<string>0</string>
-	<string>Midterm</string>
-	<string>25</string>
+	<string>Test4</string>
+	<string>13</string>
 	<string>0</string>
 	<string>0</string>
 	<string>Final</string>
-	<string>35</string>
+	<string>50</string>
 	<string>0</string>
 	<string>0</string>
 </array>

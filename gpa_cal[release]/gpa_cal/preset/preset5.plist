@@ -2,25 +2,21 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <array>
-	<string>a</string>
-	<string>ECO105Y Test</string>
-	<string>Y</string>
+	<string></string>
+	<string>ECO358F</string>
+	<string>F</string>
 	<string>0</string>
-	<string>Midterm 1</string>
-	<string>13.0</string>
-	<string>0.0</string>
-	<string>0.0</string>
-	<string>Midterm 2</string>
-	<string>13.0</string>
-	<string>0.0</string>
-	<string>0.0</string>
-	<string>Midterm 3</string>
-	<string>13.0</string>
-	<string>0.0</string>
-	<string>0.0</string>
+	<string>Midterm1</string>
+	<string>30</string>
+	<string>0</string>
+	<string>0</string>
+	<string>Midterm2</string>
+	<string>30</string>
+	<string>0</string>
+	<string>0</string>
 	<string>Final</string>
-	<string>51.0</string>
-	<string>0.0</string>
-	<string>0.0</string>
+	<string>40</string>
+	<string>0</string>
+	<string>0</string>
 </array>
 </plist>

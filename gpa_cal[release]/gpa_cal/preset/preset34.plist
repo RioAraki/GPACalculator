@@ -3,47 +3,43 @@
 <plist version="1.0">
 <array>
 	<string></string>
-	<string>FSL100F</string>
-	<string>F</string>
+	<string>EAS310Y</string>
+	<string>Y</string>
 	<string>0</string>
-	<string>Quiz1</string>
-	<string>5</string>
-	<string>0</string>
-	<string>0</string>
-	<string>Quiz2</string>
-	<string>5</string>
+	<string>Classroom Performance in Lecture</string>
+	<string>20</string>
 	<string>0</string>
 	<string>0</string>
-	<string>Quiz3</string>
-	<string>5</string>
+	<string>Classroom Performance in Drill</string>
+	<string>20</string>
 	<string>0</string>
 	<string>0</string>
-	<string>In-class</string>
+	<string>Homework</string>
 	<string>10</string>
+	<string>0</string>
+	<string>0</string>
+	<string>Digital Storytelling Essay</string>
+	<string>5</string>
+	<string>0</string>
+	<string>0</string>
+	<string>Digital Storytelling Presentation</string>
+	<string>5</string>
 	<string>0</string>
 	<string>0</string>
 	<string>Midterm</string>
-	<string>25</string>
-	<string>0</string>
-	<string>0</string>
-	<string>Comprehension Test</string>
 	<string>10</string>
 	<string>0</string>
 	<string>0</string>
-	<string>Final Comprehension Test</string>
-	<string>15</string>
-	<string>0</string>
-	<string>0</string>
-	<string>Online assessment</string>
-	<string>15</string>
-	<string>0</string>
-	<string>0</string>
-	<string>Overall Assessment</string>
+	<string>Final Oral Presentation</string>
 	<string>10</string>
 	<string>0</string>
 	<string>0</string>
-	<string>Final</string>
-	<string>33</string>
+	<string>Final Exam Written</string>
+	<string>10</string>
+	<string>0</string>
+	<string>0</string>
+	<string>Final Exam Oral</string>
+	<string>10</string>
 	<string>0</string>
 	<string>0</string>
 </array>

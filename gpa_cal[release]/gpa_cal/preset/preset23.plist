@@ -3,15 +3,23 @@
 <plist version="1.0">
 <array>
 	<string></string>
-	<string>IMM340F</string>
+	<string>PSY100F</string>
 	<string>F</string>
 	<string>0</string>
-	<string>Term Test</string>
-	<string>40</string>
+	<string>Term Test1</string>
+	<string>30</string>
 	<string>0</string>
 	<string>0</string>
-	<string>Final Test</string>
-	<string>60</string>
+	<string>Term Test2</string>
+	<string>30</string>
+	<string>0</string>
+	<string>0</string>
+	<string>Final Exam</string>
+	<string>36</string>
+	<string>0</string>
+	<string>0</string>
+	<string>Experimental Credit</string>
+	<string>4</string>
 	<string>0</string>
 	<string>0</string>
 </array>

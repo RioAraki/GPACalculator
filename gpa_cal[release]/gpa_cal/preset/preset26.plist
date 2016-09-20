@@ -3,26 +3,18 @@
 <plist version="1.0">
 <array>
 	<string></string>
-	<string>LIN203F</string>
+	<string>STA302F</string>
 	<string>F</string>
 	<string>0</string>
-	<string>Attendance and participation</string>
+	<string>Assignment1</string>
 	<string>10</string>
 	<string>0</string>
 	<string>0</string>
-	<string>Short quiz1</string>
+	<string>Assignment2</string>
 	<string>10</string>
 	<string>0</string>
 	<string>0</string>
-	<string>Short quiz2</string>
-	<string>10</string>
-	<string>0</string>
-	<string>0</string>
-	<string>Writing assignment1</string>
-	<string>10</string>
-	<string>0</string>
-	<string>0</string>
-	<string>Writing assignment2</string>
+	<string>Assignment3</string>
 	<string>10</string>
 	<string>0</string>
 	<string>0</string>
@@ -31,7 +23,7 @@
 	<string>0</string>
 	<string>0</string>
 	<string>Final</string>
-	<string>35</string>
+	<string>45</string>
 	<string>0</string>
 	<string>0</string>
 </array>

@@ -2,8 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <array>
-	<string>Jonathan Korman</string>
-	<string>APM346F Jonathan Korman</string>
+	<string></string>
+	<string>STA355F</string>
 	<string>F</string>
 	<string>0</string>
 	<string>Homework1</string>
@@ -26,12 +26,12 @@
 	<string>5</string>
 	<string>0</string>
 	<string>0</string>
-	<string>Term Test</string>
+	<string>Midterm</string>
 	<string>30</string>
 	<string>0</string>
 	<string>0</string>
-	<string>Final Exam</string>
-	<string>45</string>
+	<string>Final</string>
+	<string>50</string>
 	<string>0</string>
 	<string>0</string>
 </array>

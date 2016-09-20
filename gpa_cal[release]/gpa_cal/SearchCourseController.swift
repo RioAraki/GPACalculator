@@ -184,7 +184,8 @@ class SearchCourseController: UIViewController, UITableViewDataSource, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(red: 42/255, green: 200/255, blue: 202/255, alpha: 1);
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil);
+        presetCourses = presetCourses.sort({$0.name < $1.name});
         sc = UISearchController(searchResultsController: nil)
         searchResult.tableHeaderView = sc.searchBar
         sc.searchBar.placeholder = "e.g. CSC108F"

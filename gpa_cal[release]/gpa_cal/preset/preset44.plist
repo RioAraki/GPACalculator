@@ -2,36 +2,28 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <array>
-	<string>Jonathan Korman</string>
-	<string>APM346F Jonathan Korman</string>
-	<string>F</string>
+	<string></string>
+	<string>MAT157Y</string>
+	<string>Y</string>
 	<string>0</string>
-	<string>Homework1</string>
-	<string>5</string>
-	<string>0</string>
-	<string>0</string>
-	<string>Homework2</string>
-	<string>5</string>
+	<string>Weekly Problem</string>
 	<string>0</string>
 	<string>0</string>
-	<string>Homework3</string>
-	<string>5</string>
+	<string>0</string>
+	<string>Midterm1</string>
 	<string>0</string>
 	<string>0</string>
-	<string>Homework4</string>
-	<string>5</string>
+	<string>0</string>
+	<string>Midterm2</string>
 	<string>0</string>
 	<string>0</string>
-	<string>Homework5</string>
-	<string>5</string>
+	<string>0</string>
+	<string>Midterm3</string>
 	<string>0</string>
 	<string>0</string>
-	<string>Term Test</string>
-	<string>30</string>
 	<string>0</string>
+	<string>Final</string>
 	<string>0</string>
-	<string>Final Exam</string>
-	<string>45</string>
 	<string>0</string>
 	<string>0</string>
 </array>

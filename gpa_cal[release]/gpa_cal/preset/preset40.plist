@@ -3,83 +3,75 @@
 <plist version="1.0">
 <array>
 	<string></string>
-	<string>CSC120F</string>
-	<string>F</string>
+	<string>IFP010Y</string>
+	<string>Y</string>
 	<string>0</string>
-	<string>Lab1</string>
-	<string>1</string>
-	<string>0</string>
-	<string>0</string>
-	<string>Lab2</string>
-	<string>1</string>
+	<string>Recorded Speaking Assignment1</string>
+	<string>2.5</string>
 	<string>0</string>
 	<string>0</string>
-	<string>Lab3</string>
-	<string>1</string>
+	<string>Recorded Speaking Assignment2</string>
+	<string>2.5</string>
 	<string>0</string>
 	<string>0</string>
-	<string>Lab4</string>
-	<string>1</string>
+	<string>Listening Journal1</string>
+	<string>2</string>
 	<string>0</string>
 	<string>0</string>
-	<string>Lab5</string>
-	<string>1</string>
+	<string>Listening Journal2</string>
+	<string>2</string>
 	<string>0</string>
 	<string>0</string>
-	<string>Lab6</string>
-	<string>1</string>
+	<string>Listening Journal3</string>
+	<string>2</string>
 	<string>0</string>
 	<string>0</string>
-	<string>Lab7</string>
-	<string>1</string>
+	<string>Listening Journal4</string>
+	<string>2</string>
 	<string>0</string>
 	<string>0</string>
-	<string>Lab8</string>
-	<string>1</string>
+	<string>Listening Journal5</string>
+	<string>2</string>
 	<string>0</string>
 	<string>0</string>
-	<string>Lab9</string>
-	<string>1</string>
+	<string>Vocab Quiz</string>
+	<string>5</string>
 	<string>0</string>
 	<string>0</string>
-	<string>Lab10</string>
-	<string>1</string>
+	<string>Term Test</string>
+	<string>15</string>
 	<string>0</string>
 	<string>0</string>
-	<string>Assignment1</string>
+	<string>Participation and Homework</string>
+	<string>5</string>
+	<string>0</string>
+	<string>0</string>
+	<string>Presentation and Lead Discussion</string>
 	<string>10</string>
 	<string>0</string>
 	<string>0</string>
-	<string>Assignment2</string>
+	<string>RSA</string>
+	<string>2.5</string>
+	<string>0</string>
+	<string>0</string>
+	<string>RSA2</string>
+	<string>2.5</string>
+	<string>0</string>
+	<string>0</string>
+	<string>Quiz</string>
+	<string>8</string>
+	<string>0</string>
+	<string>0</string>
+	<string>Speaking Test</string>
 	<string>10</string>
 	<string>0</string>
 	<string>0</string>
-	<string>Exercise1</string>
-	<string>5</string>
-	<string>0</string>
-	<string>0</string>
-	<string>Exercise2</string>
-	<string>5</string>
-	<string>0</string>
-	<string>0</string>
-	<string>Exercise3</string>
-	<string>5</string>
-	<string>0</string>
-	<string>0</string>
-	<string>Exercise4</string>
-	<string>5</string>
-	<string>0</string>
-	<string>0</string>
-	<string>Exercise5</string>
-	<string>5</string>
-	<string>0</string>
-	<string>0</string>
-	<string>Midterm</string>
-	<string>10</string>
+	<string>Participation</string>
+	<string>3</string>
 	<string>0</string>
 	<string>0</string>
 	<string>Final</string>
-	<string>35</string>
+	<string>24</string>
 	<string>0</string>
 	<string>0</string>
 </array>
