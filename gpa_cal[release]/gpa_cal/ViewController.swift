@@ -132,7 +132,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         //back button style
        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
         saveList(presetCourses.sort({$0.name < $1.name}))
-        NSThread.sleepForTimeInterval(3.0)
+        //NSThread.sleepForTimeInterval(3.0)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -239,11 +240,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 result.append(self.loading(tmpList as! [String], order: "\(index)", diy: 0))
                 index = index + 1
             }
+            result = result.sort({$0.name < $1.name})
+            var i = 0;
+            while i < result.count {
+                result[i].order = String(i)
+                i = i + 1;
+            }
             
         }
       
         print(index)
-        return result
+        return result.sort({$0.name < $1.name})
     }
     
     func loadDIY() -> [Course]{
